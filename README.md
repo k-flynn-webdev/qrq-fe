@@ -19,3 +19,20 @@ A no nonsense system to solve wasting time waiting in lines. Improve communicati
 
 All with a simple QR code
         
+
+
+FLOWS:
+
+New user (arrive at business):
+- Open camera app to look at QR code on wall
+- User is directed to go to a special link
+- A page opens with information:
+    - where they are
+    - how many people are waiting
+    - the next available slot
+- Asks are they happy to join the line
+- IF they accept they are added to the line anonymously 
+    - they can provide for quick sign in:
+        - a phone number (asked if it is ok to be texted message updates, not required)
+        - email address (asked if it is ok to be emailed message updates, not required)
+        - social sign in eg google/apple/yahoo (asked if it is ok to be emailed message updates, not required)
