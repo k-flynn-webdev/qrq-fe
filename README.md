@@ -6,18 +6,35 @@ Waiting in lines all day long, no idea when they move, no idea until you go to a
 
 Solution:
 A no nonsense system to solve wasting time waiting in lines. Improve communication, improve business, leads to happier customers.
-All with a simple QR code
+All with a simple QR code.
+
+#### 
+AIM:
 
     Customer:
-        - Seemless/frictionless signup 
+        - Seamless/frictionless signup 
         - Upfront information on where you are and how long you'll have to wait
         - Dynamic info (person per minute info) (average wait time) (early book/pause my spot?)
-
+    
     Business:
         - Live feed of line status
-        - Manage line dynamicly (VIP customers?)
+        - Manage line dynamically (VIP customers?)
         - Direct message / Group message
         - Control branding (colours, logo, messages)
+
+#### 
+Use cases:
+
+    - Banks/Post/Service office lines etc
+    - Could be used with over-loaded websites (queue system)
+    - Restaurants possibly? Be shown the menu and updated on position while you wait
+    
+    Business:
+    - Can see busy periods in real-time e.g. place more staff etc
+    - Direct commuincation with customers
+    - Track a regular customer and reward post interaction, make good karma??
+   
+
 
 FLOWS:
 
@@ -38,9 +55,33 @@ FLOWS:
         - they can also add extra info to help the business (at any time):
             - name (not required)
             - customer info / problem? (not required)
-    
+
 QR-CODES
 
     `check-in-QR` - The magic link to join the line advertised
     `check-out-QR` - The magic link to provide feedback/ free slot up (not always required)
-    
+
+#### PROJECT-PLAN:
+
+- User
+    - Name
+    - Phone number
+    - Email
+    - Social login (email)
+- QRQ
+    - Name
+    - Branding
+    - Info (real-time)
+      - Line size
+      - Line wait
+      - Line speed/eta
+    - Notifications (real-time)
+    - Check-In
+        - Creates a `QRQ-User`
+    - Check-Out
+        - Ends a `QRQ-User`
+- QRQ-User
+    - Position (real-time)
+    - ETA (real-time)
+    - Add extra info
+    - Messages (communication from QRQ) (real-time)
